@@ -35,7 +35,9 @@ const Shortens = () => {
                         >
                             <span>{item.original_link}</span>
                             <span>{item.full_short_link2}</span>
-                            <Button
+                            {
+                                // @ts-ignore
+                                <Button
                                 variant="square"
                                 onClick={() => copyToClipboard(item.full_short_link2)}
                             >
@@ -45,6 +47,7 @@ const Shortens = () => {
                                         : 'Copy'
                                 }
                             </Button>
+                            }
                         </motion.div>
                     </AnimatePresence>
                 ))}
