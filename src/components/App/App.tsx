@@ -9,11 +9,12 @@ import {QueryClientProvider} from "react-query";
 import {queryClient} from "../../hooks/react-query/query-client";
 import {ReactQueryDevtools} from "react-query/devtools";
 import {ShortLinksProvider} from "../../providers/ShortLinkProvider";
+import {ChartJs} from "../ChartJs/ChartJs";
 
 function App() {
     return (
         <>
-            <QueryClientProvider client={queryClient}>
+           {/* <QueryClientProvider client={queryClient}>
                 <ShortLinksProvider>
                     <Header/>
                     <Hero/>
@@ -24,7 +25,8 @@ function App() {
                     <Footer/>
                     <ReactQueryDevtools/>
                 </ShortLinksProvider>
-            </QueryClientProvider>
+            </QueryClientProvider>*/}
+            <ChartJs />
         </>
     );
 }
